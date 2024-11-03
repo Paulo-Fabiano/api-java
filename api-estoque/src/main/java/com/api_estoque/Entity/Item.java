@@ -16,12 +16,8 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private long id;
-
     private String nomeItem;
     private int quantidadeItem;
-
-    public String ToString() {
-        return "Nome do Item: "+nomeItem+", Quantidade: "+quantidadeItem;
-    }
+    private double precoItem;
 
 }
